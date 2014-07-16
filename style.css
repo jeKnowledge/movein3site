@@ -1,0 +1,722 @@
+/*
+Theme Name: MoveIn3
+Theme URI: http://jeknowledge.pt
+Author: André Delgado
+Author URI: http://andreny.com
+Description: MoveIn3 Wordpress Theme made by André Delgado @ Jeknowledge
+*/
+
+/* ----------- IMPORTS --------- */
+
+
+
+
+/* ------------ FONTS ----------- */
+
+@font-face {
+	font-family: "BebasNeue";  
+	src: local('BebasNeue'), 
+		url("fonts/BebasNeue.otf") format('truetype');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: "LeagueGothic";  
+	src: local('LeagueGothic'), 
+		url("fonts/LeagueGothic.otf") format('truetype');  
+	font-weight: normal;  
+}
+
+@font-face {
+	font-family: "Tahoma";  
+	src: local('Tahoma'), 
+		url("fonts/Tahoma.ttf") format('truetype');  
+	font-weight: normal;  
+}
+
+
+
+/* ----------- RESETS ------------ */
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ------------ TEXTOS ------------ */
+
+h1 {
+	font-family: "BebasNeue";
+	text-align:center;
+	font-size: 4.4em;
+}
+
+h2 {
+	font-family: "BebasNeue";
+	font-size: 2.0em;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-family: "BebasNeue";
+	text-align: left;
+	font-size: 20px;
+}
+
+p {
+	font-family: "Tahoma", "Verdana";
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.8px;
+	text-align:left;
+}
+
+
+/* ---------- MAIN ----------- */
+
+body {
+	background-color: #FFF;
+	color: #333;
+	font-family: "Tahoma";
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(51,51,51,0.8);
+	position: fixed;
+	display: none;
+}
+
+header .logo {
+	margin-top: -3px;
+}
+
+header .menuTopo {
+	margin-top: 4px;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding-bottom: 100px;
+}
+
+.content {
+	padding-top: 100px;
+}
+
+.content h1 {
+	padding-bottom: 20px;
+}
+
+.pageCover1 {
+	width: 100%;
+	height: 250px;
+	background-image:url('img/slider1.jpg');
+	background-size: cover;
+	background-position: 0 -520px;
+	box-shadow: 0px 313px rgba(0, 0, 0, 0.1) inset;
+}
+
+.pageCover2 {
+	width: 100%;
+	height: 250px;
+	background-image:url('img/slider2.jpg');
+	background-size: cover;
+	background-position: 0 -410px;
+	box-shadow: 0px 313px rgba(0, 0, 0, 0.1) inset;
+}
+
+.pageCover3 {
+	width: 100%;
+	height: 250px;
+	background-image:url('img/slider3.jpg');
+	background-size: cover;
+	background-position: 0 -450px;
+	box-shadow: 0px 313px rgba(0, 0, 0, 0.1) inset;
+}
+
+.pageCover h1 {
+	padding-top: 75px;
+	color: white;
+}
+
+.green {
+	box-shadow: 0px 313px rgba(39, 174, 96, 0.4) inset !important;
+}
+
+.yellow {
+	box-shadow: 0px 313px rgba(243, 156, 18, 0.4) inset !important;
+}
+
+.blue {
+	box-shadow: 0px 313px rgba(41, 128, 185, 0.4) inset !important;
+}
+
+
+
+
+
+/* -------- TOP BAR ---------- */
+
+.social {
+	position: absolute;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.topBar {
+	width: 100%;
+	height: 90px;
+	background-color: rgba(0,0,0,0.5);
+	clear: both;
+	position:absolute;
+	margin-top: 50px;
+	/*border-top: 1px solid #cecece;*/
+}
+
+.fRight {
+	float: right;
+}
+
+.fLeft {
+	float: left;
+}
+
+.logo {
+	float: left;
+	display: inline;
+	margin-top: 12px;
+}
+
+.extras {
+	display: inline-block;
+}
+
+.extras i {
+	margin-left: 10px;
+}
+
+.facebook i {
+	color: rgba(41, 128, 185, 1);
+}
+
+.linkedin i {
+	color: rgba(243, 156, 18, 1);
+}
+
+.email i {
+	color: rgba(148, 189, 83, 1);
+}
+
+
+
+/* --------- MENUS --------- */
+
+.menuTopo {
+	display: inline-block;
+	margin-top: 19px;
+}
+
+.menuTopo li {
+	display: inline-block;
+	margin: 0 5px 0 5px;
+
+}
+
+.menuTopo a {
+	text-decoration: none;
+	font-size: 1em;
+	font-family: Tahoma;
+	color: #fefefe;
+	font-size: 14px;
+}
+
+.menuTopo a:hover {
+	font-style: italic;
+}
+
+.sub-menu {
+	display: none;
+}
+
+/* --------- SLIDER -------- */
+
+#slider {
+	width: 100%;
+	height: 90vh;
+	background-image: url('img/slider1.jpg');
+	background-size: cover !important;
+	background-color: #333;
+	padding-top: 90px;
+	box-shadow: 0px 100vh rgba(0, 0, 0, 0.25) inset;	
+}
+
+#slider h1 {
+	color: #FFF;
+	text-align: center;
+	letter-spacing: 0.95px;
+	font-size: 6.060em;
+	font-family: "LeagueGothic";
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 200px;
+}
+
+#slider h2 {
+	color: #FFF;
+	text-align: center;
+	letter-spacing: 0.95px;
+	font-size: 3.5em;
+	font-family: "LeagueGothic";
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.logoWhite {
+	margin-top: 100px;
+}
+
+
+/* --------- SOCIAL BAR ------- */
+
+/*.socialBar {
+	width: 100%;
+	min-height: 50px;
+	background-color: whitesmoke;
+	border-bottom: 1px solid #cecece;
+}
+
+.sub-menu li {
+	display: none;
+}
+
+.sub-menu li:hover {
+	display: inline-block;*/
+}
+
+/* --------- PAGINAS ---------- */
+
+
+
+/* -------- EQUIPA ------------ */
+
+#founders {
+
+}
+
+.founder1 {
+	background: url('img/equipa/3.jpg');
+	background-size: cover;
+	width:150px;
+	height:150px;
+	border-radius: 9999px;
+	display: inline-block;
+	-webkit-transition: box-shadow 1s;
+	box-shadow: 0px 313px rgba(148, 189, 83, 0.3) inset;
+}
+
+.founder2 {
+	background: url('img/equipa/2.jpg');
+	background-size: cover;
+	width:150px;
+	height:150px;
+	border-radius: 9999px;
+	display: inline-block;
+	-webkit-transition: box-shadow 1s;
+	box-shadow: 0px 313px rgba(148, 189, 83, 0.3) inset;
+}
+
+.founder3 {
+	background: url('img/equipa/1.jpg');
+	background-size: cover;
+	width:150px;
+	height:150px;
+	border-radius: 9999px;
+	display: inline-block;
+	-webkit-transition: box-shadow 1s;
+	box-shadow: 0px 313px rgba(148, 189, 83, 0.3) inset;
+}
+
+.founder4 {
+	background: url('img/equipa/4.jpg');
+	background-size: cover;
+	width:150px;
+	height:150px;
+	border-radius: 9999px;
+	display: inline-block;
+	
+	-webkit-transition: box-shadow 0.5s;
+	box-shadow: 0px 313px rgba(148, 189, 83, 0.3) inset;
+}
+
+.founder1:hover, .founder2:hover, .founder3:hover ,.founder4:hover {
+	box-shadow: none;
+	-webkit-transition: box-shadow 0.5s;
+}
+
+.col4 {
+	display: inline-block;
+	margin-right:25px;
+	margin-left: 25px; 
+	margin-top:50px;
+}
+
+.col4 p {
+	text-align: center;
+	font-style: italic;
+}
+
+/* ----------- PARCEIROS ------ */
+
+#parceiros {
+	background-color: #F8F8F8;
+}
+
+#parceiros img {
+	width:150px;
+	height:150px;
+	border-radius: 9999px;
+	display: inline-block;
+}
+
+.parceirosMargin img {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+/* ----------- EVENTOS ---------- */
+
+#eventos {
+	background-color: #F8F8F8;
+}
+
+#eventos img {
+	width: 250px;
+	height: 250px;
+	border-radius: 9999px;
+}
+
+.inner {
+	height: 250px;
+}
+
+/* ---------- CALLS ------------- */
+
+#calls {
+	
+}
+
+.col {
+	width: 250px;
+	display: inline-table;
+	margin: 0 15px 0 15px;
+}
+
+.col img {
+	height: 100px;
+	width: 250px;
+}
+
+.innerCalls {
+}
+
+
+
+/* --------- NOTICIAS ----------- */
+
+#noticias{
+	background-color: #F8F8F8;
+}
+
+#noticias img {
+	width: 400px;
+	height: 240px;
+}
+
+.news {
+	margin-bottom: 50px;
+	border-bottom: 1px solid black;
+	display: block;
+	clear: both;
+	height: 340px;
+}
+
+.left {
+	float: left;
+	margin-right: 50px;
+}
+
+.right {
+	padding-top: 40px;
+}
+
+
+/* ---------- CONTACTO --------- */
+
+#contacto {
+	height: 440px;
+	clear: both;
+	background-color: #333;
+
+}
+
+#contacto label {
+	display: none;
+}
+
+#contacto span {
+	display: none;
+}
+
+.form-control {
+	width: 400px;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.help-inline {
+	color: #fefefe;
+	font-family: tahoma;
+	display: none !important;
+}
+
+.btn {
+	border: none;
+	width: 100px;
+	height: 40px;
+	background-color: #fefefe;
+	color: #333;
+}
+
+.subscribe-input {
+	width: 290px;
+	padding: 10px;
+	border: none;
+}
+
+.subscribe-btn {
+	width: 100px;
+	height: 33px;
+	border: none;
+	background-color: #fefefe;
+	color: #333;
+}
+
+.col2 {
+	width: 415px;
+	display: inline-block;
+	padding-top: 40px;
+}
+
+.col2 p {
+	color: #fefefe;
+}
+
+.Email {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #fefefe;
+}
+
+
+/* ----------- FOOTER --------- */
+
+footer {
+	height: 75px;
+	background-color: #111;
+}
+
+.footerCredits {
+	display: inline-block;
+	float: left;
+	color: #fefefe;
+	font-size: 10px;
+	margin-top: 30px;
+	clear: left;
+}
+
+.menuFooter {
+	color: #fefefe;
+	margin-top: 10px;
+}
+
+.menuFooter ul {
+	list-style: none
+}
+
+.menuFooter li {
+	display: inline-block;
+	margin: 0 5px 0 5px;
+}
+
+.menuFooter a {
+	color: #fefefe;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.menuFooter a:hover {
+	font-style: italic;
+}
+
+
+#quem-somos {
+}
+
+#objectivos {
+background: #F8F8F8;
+
+}
+
+#procuramos {
+
+}
+
+#ofertas {
+background: #F8F8F8;
+}
+
+#ecossistema {
+
+}
+
+#ecossistema img {
+	max-width: 800px;
+	width: 90%;
+	height: auto;
+	margin-left:85px;
+}
+
+
+
+/* ----------- MEDIA QUERYS --------- */
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+}*/
+
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 3.5em;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.topBar {
+		background-color: #000;
+	}
+
+	.menuTopo {
+		display: none;
+	}
+
+	#ecossistema img {
+		width: 90%;
+		height: auto;
+		margin-left: 0px;
+	}
+
+	#slider {
+		height: 100%;
+	}
+
+	#slider h1 {
+		margin-top: 75px;
+	}
+
+	#noticias img {
+		width: 100%;
+		height: auto;
+	}
+
+	#contacto {
+		height: 380px;
+	}
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+	.container {
+		width: 800px;
+	}
+
+	.topBar {
+		height: 70px;
+		margin-top: 38px;
+	}
+
+	.logo {
+		margin-top: 5px;
+	}
+
+	.menuTopo {
+		margin-top: 12px;
+	}
+
+	#slider h1 {
+		font-size: 5.060em;
+		margin-top: 100px;
+	}
+
+	#slider h2 {
+		font-size: 3em;
+	}
+
+	#ecossistema img {
+		width: 80%;
+	}
+
+	#eventos img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.col img {
+		height: 100px;
+		width: 200px;
+	}
+
+	.noticias img {
+		width: 300px;
+		height: 200px;
+	}
+
+	#contacto {
+		height: 700px;
+	}
+
+	.col2 { 
+		float: left;
+	}
+
+	.pageCover1 {
+		background-position: 0 -300px;
+		background-repeat: no-repeat;
+	}
+
+	.pageCover2 {
+		background-position: 0 -200px;
+		background-repeat: no-repeat;
+	}
+
+	.pageCover3 {
+		background-position: 0 -300px;
+		background-repeat: no-repeat;
+	}
+}
+
+/*@media screen and (min-width: 1300px) {
+
+}*/

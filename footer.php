@@ -1,7 +1,7 @@
 	<footer>
 		<div class="container">
 			<div class="footerCredits">
-				MOVEin3 Copyright 2014. All right reserved
+				MOVEin3 Copyright 2014 - All Rights Reserved
 			</div>
 			<div class="menuFooter fRight"><?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?></div>
 		</div>

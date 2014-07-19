@@ -187,7 +187,7 @@
 		<div class="container">
 			<div class="content">
 				<div class="innerCalls">
-					<h1>Call's Activas</h1>
+					<h1>Calls Ativas</h1>
 					<center>
 					<?php $my_query = new WP_Query('category_name=calls&posts_per_page=3');
 					while ($my_query->have_posts()) : $my_query->the_post(); ?>
@@ -237,7 +237,7 @@
 		<div class="contacto-inner">
 			<div class="col2 fLeft">
 				<?php
-				$page_id = 37;
+				$page_id = 77;
 				$page_data = get_page($page_id);
 				echo '<p>';
 				echo apply_filters('the_content', $page_data->post_content);  

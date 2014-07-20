@@ -13,8 +13,8 @@
     <div class="container">
       <div class="content">
         <?php
-        $page_id = 4;
-        $page_data = get_page($page_id);
+        $page_title = "Quem Somos";
+        $page_data = get_page_by_title($page_title);
         echo '<h1>' . $page_data->post_title . '</h1>';
         echo '<p>';
         echo apply_filters('the_content', $page_data->post_content);
@@ -31,8 +31,8 @@
     <div class="container">
       <div class="content">
         <?php
-        $page_id = 6;
-        $page_data = get_page($page_id);
+        $page_title = "Objetivos";
+        $page_data = get_page_by_title($page_title);
         echo '<h1>' . $page_data->post_title . '</h1>';
         echo '<p>';
         echo apply_filters('the_content', $page_data->post_content);
@@ -49,8 +49,8 @@
     <div class="container">
       <div class="content">
         <?php
-        $page_id = 8;
-        $page_data = get_page($page_id);
+        $page_title = "O que procuramos?";
+        $page_data = get_page_by_title($page_title);
         echo '<h1>' . $page_data->post_title . '</h1>';
         echo '<p>';
         echo apply_filters('the_content', $page_data->post_content);
@@ -67,8 +67,8 @@
     <div class="container">
       <div class="content">
         <?php
-        $page_id = 10;
-        $page_data = get_page($page_id);
+        $page_title = "O que oferecemos";
+        $page_data = get_page_by_title($page_title);
         echo '<h1>' . $page_data->post_title . '</h1>';
         echo '<p>';
         echo apply_filters('the_content', $page_data->post_content);
@@ -127,8 +127,8 @@
       <div class="content">
         <div class="parceirosMargin">
           <?php
-          $page_id = 70;
-          $page_data = get_page($page_id);
+          $page_title = "Parceiros";
+          $page_data = get_page_by_title($page_title);
           echo '<h1>' . $page_data->post_title . '</h1>';
           echo '<p>' . apply_filters('the_content', $page_data->post_content) . '</p>';
           ?>
@@ -144,8 +144,8 @@
     <div class="container">
       <div class="content">
         <?php
-        $page_id = 12;
-        $page_data = get_page($page_id);
+        $page_title = "Ecossistema";
+        $page_data = get_page_by_title($page_title);
         echo '<h1>' . $page_data->post_title . '</h1>';
         echo '<p>';
         echo apply_filters('the_content', $page_data->post_content);
